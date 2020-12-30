@@ -1,0 +1,4 @@
+2020-12-30 06:56:14.7874 INFO  This is an info msg from get method accessed from Home controller
+2020-12-30 06:56:28.5106 WARN  This is an warning msg from get method with parm accessed from Home controller
+2020-12-30 06:57:13.7424 ERROR  This is an Error msg from post method  from Home controller
+2020-12-30 06:57:46.2769 DEBUG  This is a Debug msg from delete method with parm accessed from Home controller
