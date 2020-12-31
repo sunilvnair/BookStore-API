@@ -67,6 +67,10 @@ namespace BookStore_API
 								});
 			//to include logging interface and service into project
 			services.AddSingleton<ILoggerService,LoggerService>();
+			//to include author repository servis into scope
+			services.AddScoped <IAuthorRepository ,AuthorRepository>()  ;
+
+
 
 			//keep AddControllers as the last services ...
 			services.AddControllers();

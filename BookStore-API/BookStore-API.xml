@@ -4,6 +4,11 @@
         <name>BookStore-API</name>
     </assembly>
     <members>
+        <member name="T:BookStore_API.Controllers.AuthorsController">
+            <summary>
+            End point for uthors controller
+            </summary>
+        </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             General Book Store API Controller
