@@ -1,5 +1,7 @@
+using AutoMapper;
 using BookStore_API.Contracts;
 using BookStore_API.Data;
+using BookStore_API.Mappings;
 using BookStore_API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,6 +50,10 @@ namespace BookStore_API
 
 			});
 
+			//for activating automapper facility
+			services.AddAutoMapper(typeof(Maps));
+
+			//Adding swagger service for the automatic document preparation
 			services.AddSwaggerGen(c => {
 									c.SwaggerDoc("v1.0", new OpenApiInfo
 									{
