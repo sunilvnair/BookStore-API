@@ -124,7 +124,7 @@ namespace BookStore_API.Controllers
             catch (Exception e)
             {
 
-                return internalError($"{e.Message} - {e.InnerException}");
+                return internalError($"{location} - {e.Message} - {e.InnerException}");
             }
         }
 

@@ -20,3 +20,30 @@
 2021-01-02 10:19:32.8614 INFO Author deletion completed succesfully for id - 2
 2021-01-02 10:20:03.2905 INFO Started getAuthors for getting authors
 2021-01-02 10:20:03.4841 INFO Successfully data fetched for getAuthors 
+2021-01-02 17:12:13.9910 INFO  Books - getBooks Call Started for getting books
+2021-01-02 17:12:16.2215 INFO  Books - getBooks Successfully data fetched 
+2021-01-02 17:12:47.8712 INFO  Books - getBook  Call Started for getting book by id 1
+2021-01-02 17:12:48.2371 WARN  Books - getBook  No data fetched for id 1
+2021-01-02 17:19:34.4997 INFO  Books - createBook Call Started 
+2021-01-02 17:19:34.9972 INFO  Books - createBook Created succesfully
+2021-01-02 17:20:03.3265 INFO  Books - getBook  Call Started for getting book by id 1
+2021-01-02 17:20:03.5324 INFO  Books - getBook  Successfully data fetched for  id 1
+2021-01-02 18:19:33.0718 INFO  Authors - getAuthors call Started 
+2021-01-02 18:19:35.4897 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-02 18:21:18.3754 INFO  Books - createBook Call Started 
+2021-01-02 18:21:19.6795 ERROR An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:3274a673-5a86-4631-985a-0d5c457fc451
+Error Number:547,State:0,Class:16
