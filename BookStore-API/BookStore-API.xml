@@ -6,8 +6,43 @@
     <members>
         <member name="T:BookStore_API.Controllers.AuthorsController">
             <summary>
-            End point for uthors controller
+            End point for Authors controller
             </summary>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.getAuthors">
+            <summary>
+            Function to return all authors details
+            </summary>
+            <returns>Ilist - List of AuthorDTO</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.getAuthor(System.Int32)">
+            <summary>
+            Function to return all author details by ID
+            </summary>
+            <param name="Id"></param>
+            <returns>An author's reord</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.createAuthor(BookStore_API.DTOs.AuthorCreateDTO)">
+            <summary>
+            To create author details
+            </summary>
+            <param name="authorDTO"></param>
+            <returns>Created status with new author details</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.updateAuthor(System.Int32,BookStore_API.DTOs.AuthorUpdateDTO)">
+            <summary>
+            To modify author details
+            </summary>
+            <param name="id"></param>
+            <param name="authorDTO"></param>
+            <returns>No content </returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.AuthorsController.deleteAuthor(System.Int32)">
+            <summary>
+            To delete author based on the id
+            </summary>
+            <param name="id"></param>
+            <returns>No content </returns>
         </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>

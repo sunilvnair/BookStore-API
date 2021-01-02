@@ -70,7 +70,7 @@ namespace BookStore_API
 			//to include author repository servis into scope
 			services.AddScoped <IAuthorRepository ,AuthorRepository>()  ;
 
-
+	
 
 			//keep AddControllers as the last services ...
 			services.AddControllers();
