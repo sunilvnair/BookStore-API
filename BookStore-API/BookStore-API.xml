@@ -44,6 +44,46 @@
             <param name="id"></param>
             <returns>No content </returns>
         </member>
+        <member name="T:BookStore_API.Controllers.BooksController">
+            <summary>
+            End point for Books controller
+            </summary>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.getBooks">
+            <summary>
+            Function to return all books details
+            </summary>
+            <returns>Ilist - List of BooksDTO</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.getBook(System.Int32)">
+            <summary>
+            Function to return all books details by ID
+            </summary>
+            <param name="Id"></param>
+            <returns>An book's reord</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.createBook(BookStore_API.DTOs.BookCreateDTO)">
+            <summary>
+            To create book details
+            </summary>
+            <param name="bookDTO"></param>
+            <returns>Created status with new book details</returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.updateBook(System.Int32,BookStore_API.DTOs.BookUpdateDTO)">
+            <summary>
+            To modify book details
+            </summary>
+            <param name="id"></param>
+            <param name="bookDTO"></param>
+            <returns>No content </returns>
+        </member>
+        <member name="M:BookStore_API.Controllers.BooksController.deleteBook(System.Int32)">
+            <summary>
+            To delete book based on the id
+            </summary>
+            <param name="id"></param>
+            <returns>No content </returns>
+        </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             General Book Store API Controller
