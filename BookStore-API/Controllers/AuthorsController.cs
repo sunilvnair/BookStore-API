@@ -2,6 +2,7 @@
 using BookStore_API.Contracts;
 using BookStore_API.Data;
 using BookStore_API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -17,6 +18,7 @@ namespace BookStore_API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [ProducesResponseType(StatusCodes.Status200OK)]
+    [Authorize]
     public class AuthorsController : ControllerBase
     {
         private readonly IAuthorRepository _authorRepository;
@@ -95,6 +97,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize (Roles= "SysAdmin")]
         public async Task<IActionResult> createAuthor([FromBody] AuthorCreateDTO authorDTO)
         {
             var location = getControllerDetails();
@@ -138,6 +141,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Roles = "SysAdmin")]
         public async Task<IActionResult> updateAuthor(int id , [FromBody] AuthorUpdateDTO authorDTO)
         {
             var location = getControllerDetails();
@@ -187,6 +191,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize(Roles = "SysAdmin")]
         public async Task<IActionResult> deleteAuthor(int id)
         {
             var location = getControllerDetails();
