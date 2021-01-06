@@ -26,7 +26,20 @@ namespace BookStore_API.Data
                 var result = await userManager.CreateAsync(user,"P@ssword1");
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(user, "SysAdmin");
+                    await userManager.AddToRoleAsync(user, "Administrator");
+                }
+            }
+            if (await userManager.FindByEmailAsync("admin@BookStore.com") == null)
+            {
+                var user = new IdentityUser
+                {
+                    UserName = "admin@BookStore.com",
+                    Email = "admin@BookStore.com"
+                };
+                var result = await userManager.CreateAsync(user, "P@ssword1");
+                if (result.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(user, "Administrator");
                 }
             }
             if (await userManager.FindByEmailAsync("sunilvnair@gmail.com") == null)
@@ -39,7 +52,7 @@ namespace BookStore_API.Data
                 var result = await userManager.CreateAsync(user, "P@ssword1");
                 if (result.Succeeded)
                 {
-                    await userManager.AddToRoleAsync(user, "SysAdmin");
+                    await userManager.AddToRoleAsync(user, "Administrator");
                 }
             }
 
@@ -59,11 +72,11 @@ namespace BookStore_API.Data
         }
         public async static Task  seedRoles(RoleManager<IdentityRole> roleManager)
         {
-            if (!await roleManager.RoleExistsAsync("SysAdmin"))
+            if (!await roleManager.RoleExistsAsync("Administrator"))
             {
                 var role = new IdentityRole
                 {
-                    Name = "SysAdmin"
+                    Name = "Administrator"
                 };
                 await roleManager.CreateAsync(role);
             }

@@ -37,11 +37,52 @@ namespace BookStore_API.Controllers
             _config = config;
         }
         /// <summary>
-        /// User Login point
+        /// For registering new user
         /// </summary>
         /// <param name="userDTO"></param>
-        /// <returns>User details</returns>
-        [AllowAnonymous]
+        /// <returns></returns>
+
+        [Route("register")]
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<IActionResult> Register([FromBody] UserDTO userDTO)
+        {
+
+            var location = getControllerDetails();
+            try
+            {
+                var username = userDTO.EmailAddress;
+                var password = userDTO.Password;
+                _logger.LogInfo($"{location} Call Started for registering user");
+                var user = new IdentityUser { Email = username, UserName = username };
+                var result = await _userManager.CreateAsync(user,password);
+                if (!result.Succeeded)
+                {
+                    foreach(var error in result.Errors)
+                    {
+                        _logger.LogError($"{location} - {error.Code} - {error.Description}");
+                    }
+                    return internalError($"{location} - {username} - registration faild");
+                }
+
+                //return Ok(new { result.Succeeded});
+                await _userManager.AddToRoleAsync(user, "Customer");
+                return Created("login", new { result.Succeeded });
+            }
+            catch (Exception e)
+            {
+
+                return internalError($"{location} - {e.Message} - {e.InnerException}");
+            }
+
+        }
+            /// <summary>
+            /// User Login point
+            /// </summary>
+            /// <param name="userDTO"></param>
+            /// <returns>User details</returns>
+        [Route("login")]
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -52,7 +93,7 @@ namespace BookStore_API.Controllers
 
                 try
                 {
-                var username = userDTO.Username;
+                var username = userDTO.EmailAddress;
                 var password = userDTO.Password;
                 _logger.LogInfo($"{location} Call Started for getting login");
                 var result = await _signInManager.PasswordSignInAsync(username, password, false, false);
@@ -104,7 +145,7 @@ namespace BookStore_API.Controllers
                 new Claim(ClaimTypes.NameIdentifier,user.Id)
             };
             var roles = await _userManager.GetRolesAsync(user);
-            claims.AddRange(roles.Select(r => new Claim(ClaimsIdentity.DefaultNameClaimType, r)));
+            claims.AddRange(roles.Select(r => new Claim(ClaimsIdentity.DefaultRoleClaimType, r)));
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],
                 _config["Jwt:Issuer"],
                 claims ,

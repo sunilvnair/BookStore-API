@@ -1,0 +1,63 @@
+﻿@page "/Register"
+@using BookStore_UI.Models
+@using BookStore_UI.Contracts
+
+@inject IAuthenticationRepository _authRepo
+@inject NavigationManager _navMan
+
+
+<div class="card">
+    <div class="card-header">
+        Sign Up New User Now
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">User Details</h5>
+        @if (isFaild)
+        {
+            <div class="alert alert-danger" >
+                <p>Something went wrong with user resgistration </p>
+            </div>
+        }
+        <EditForm Model="RegModel" OnValidSubmit="CreateRegistration">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="form-group">
+                <label for="Email">Email address</label>
+                <InputText class="form-control" id="email" @bind-Value="RegModel.EmailAddress" />
+                <ValidationMessage For="@(() => RegModel.EmailAddress)" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <InputText type="password" class="form-control" id="password" @bind-Value="RegModel.Password" />
+                <ValidationMessage For="@(() => RegModel.Password)"  />
+
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <InputText type="password" class="form-control" id="confirmPassword" @bind-Value="RegModel.ConfirmPassword" />
+                <ValidationMessage For="@(() => RegModel.ConfirmPassword)"  />
+
+            </div>
+            <button type="submit" class="btn btn-secondary">Save Changes</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private RegistrationModel RegModel = new RegistrationModel();
+    bool isFaild = false;
+
+    private async Task CreateRegistration ()
+    {
+
+        var response = await _authRepo.Register(RegModel);
+        if (response)
+        {
+            _navMan.NavigateTo("/login");
+        }
+        else
+        {
+            isFaild = true;
+        }
+    }
+}

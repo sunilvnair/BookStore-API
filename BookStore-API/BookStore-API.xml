@@ -114,6 +114,13 @@
             </summary>
             <param name="id"></param>
         </member>
+        <member name="M:BookStore_API.Controllers.UserController.Register(BookStore_API.DTOs.UserDTO)">
+            <summary>
+            For registering new user
+            </summary>
+            <param name="userDTO"></param>
+            <returns></returns>
+        </member>
         <member name="M:BookStore_API.Controllers.UserController.Login(BookStore_API.DTOs.UserDTO)">
             <summary>
             User Login point
