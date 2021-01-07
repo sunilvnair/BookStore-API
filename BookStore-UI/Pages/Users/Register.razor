@@ -1,22 +1,22 @@
 ﻿@page "/Register"
-@using BookStore_UI.Models
-@using BookStore_UI.Contracts
+
 
 @inject IAuthenticationRepository _authRepo
 @inject NavigationManager _navMan
 
 
-<div class="card">
+
     <div class="card-header">
         Sign Up New User Now
     </div>
     <div class="card-body">
-        <h5 class="card-title">User Details</h5>
+     
+        <PageTitle Title="User Details" />
         @if (isFaild)
         {
-            <div class="alert alert-danger" >
-                <p>Something went wrong with user resgistration </p>
-            </div>
+
+                <LoadingMessage Message="Something went wrong with operation"/>
+
         }
         <EditForm Model="RegModel" OnValidSubmit="CreateRegistration">
             <DataAnnotationsValidator />
@@ -41,7 +41,7 @@
             <button type="submit" class="btn btn-secondary">Save Changes</button>
         </EditForm>
     </div>
-</div>
+
 
 @code {
     private RegistrationModel RegModel = new RegistrationModel();

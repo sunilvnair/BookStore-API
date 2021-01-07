@@ -97,7 +97,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize (Roles= "SysAdmin")]
+        [Authorize (Roles= "Administrator")]
         public async Task<IActionResult> createAuthor([FromBody] AuthorCreateDTO authorDTO)
         {
             var location = getControllerDetails();
@@ -138,10 +138,10 @@ namespace BookStore_API.Controllers
         /// <param name="authorDTO"></param>
         /// <returns>No content </returns>
         [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Roles = "SysAdmin")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> updateAuthor(int id , [FromBody] AuthorUpdateDTO authorDTO)
         {
             var location = getControllerDetails();
@@ -172,7 +172,8 @@ namespace BookStore_API.Controllers
                     return internalError("{location} Error while updating data");
                 }
                 _logger.LogInfo($"{location} completed succesfully for id - {id}");
-                return NoContent ();
+                return Created("Create", new { author });
+               //return NoContent ();
             }
             catch (Exception e)
             {
@@ -191,7 +192,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Roles = "SysAdmin")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> deleteAuthor(int id)
         {
             var location = getControllerDetails();

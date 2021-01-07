@@ -97,7 +97,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Roles = "SysAdmin")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> createBook([FromBody] BookCreateDTO bookDTO)
         {
             var location = getControllerDetails();
@@ -141,7 +141,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Roles = "SysAdmin")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> updateBook(int id , [FromBody] BookUpdateDTO bookDTO)
         {
             var location = getControllerDetails();
@@ -191,7 +191,7 @@ namespace BookStore_API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Roles = "SysAdmin")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> deleteBook(int id)
         {
             var location = getControllerDetails();

@@ -1,0 +1,71 @@
+﻿@page "/authors/view/{id}"
+
+@inject IAuthorRepository _repo
+@inject NavigationManager _navMan
+
+
+
+<PageTitle Title="View Author Details" />
+@if (authModel == null)
+{
+    <LoadingMessage Message="Loading Author's data ...." />
+}
+else
+{
+<div class="col-md-4">
+    <table class="table table-responsive">
+        <tr>
+            <td>  First Name  </td>
+            <td>  @authModel.Firstname  </td>
+        </tr>
+        <tr>
+            <td>  Last Name  </td>
+            <td>  @authModel.Lastname  </td>
+        </tr>
+        <tr>
+            <td>  Biography </td>
+            <td>  @authModel.Bio  </td>
+        </tr>
+
+    </table>
+    @if (authModel.Books == null || authModel.Books.Count < 1)
+    {
+      
+        <LoadingMessage Message="No book(s) data available for the author...." />
+    }
+    else
+    {
+
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                My Books
+            </div>
+            <ul class="list-group list-group-flush">
+                @foreach (var book in authModel.Books)
+                {
+                    <li class="list-group-item">@book.Title - @book.Price</li>
+                }
+
+            </ul>
+        </div>
+    }
+</div>
+}
+<button @onclick="BackToList" class="btn btn-outline-secondary"><span class="oi oi-media-skip-backward"></span> Back to list</button>
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private Author authModel = new Author();
+    protected async override Task OnInitializedAsync()
+    {
+        int id = Convert.ToInt32(Id);
+        authModel = await _repo.Get(Endpoints.AuthorsEndpoint, id);
+    }
+
+    private void BackToList()
+    {
+        _navMan.NavigateTo("/authors/");
+    }
+}
