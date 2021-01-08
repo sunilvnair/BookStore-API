@@ -7,9 +7,19 @@
 
   <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" Version="3.0.0" />
+    <PackageReference Include="BlazorInputFile" Version="0.2.0" />
     <PackageReference Include="IdentityModel" Version="4.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\GeneralImages\" />
+    <Folder Include="wwwroot\Uploads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\GeneralImages\footer-orange-900-2019.jpg" />
   </ItemGroup>
 
 </Project>

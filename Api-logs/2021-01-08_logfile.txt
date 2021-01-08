@@ -1,0 +1,279 @@
+2021-01-08 06:19:11.7789 INFO  User - Login Call Started for getting login
+2021-01-08 06:19:12.1217 INFO  User - Login Successfully completed
+2021-01-08 06:19:18.4142 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:19:18.6352 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:19:22.4915 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-08 06:19:22.6077 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-08 06:19:22.6667 INFO  Authors - getAuthors call Started 
+2021-01-08 06:19:22.7301 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 06:19:25.8489 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:19:25.8748 INFO  Books - updateBook Call Started  for Id - 3
+2021-01-08 06:19:25.9812 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:19:26.3256 INFO  Books - updateBook  completed succesfully for id - 3
+2021-01-08 06:19:37.2520 INFO  Authors - getAuthors call Started 
+2021-01-08 06:19:37.3259 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 06:20:06.8796 INFO  Books - createBook Call Started 
+2021-01-08 06:20:08.0959 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6097536e-7f55-4330-9b3c-09d28e939f90
+Error Number:547,State:0,Class:16
+2021-01-08 06:20:36.2174 INFO  Books - createBook Call Started 
+2021-01-08 06:20:36.8974 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6097536e-7f55-4330-9b3c-09d28e939f90
+Error Number:547,State:0,Class:16
+2021-01-08 06:20:43.6561 INFO  Books - createBook Call Started 
+2021-01-08 06:20:44.4558 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6097536e-7f55-4330-9b3c-09d28e939f90
+Error Number:547,State:0,Class:16
+2021-01-08 06:21:55.0986 INFO  Books - createBook Call Started 
+2021-01-08 06:21:55.2971 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:21:55.4187 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:21:55.9869 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6097536e-7f55-4330-9b3c-09d28e939f90
+Error Number:547,State:0,Class:16
+2021-01-08 06:22:05.0045 INFO  Books - getBook  Call Started for getting book by id 1
+2021-01-08 06:22:05.1385 INFO  Books - getBook  Successfully data fetched for  id 1
+2021-01-08 06:22:07.8341 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:22:07.9243 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:22:10.8465 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-08 06:22:11.0484 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-08 06:22:12.9770 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:22:13.0110 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:22:19.1089 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-08 06:22:19.1842 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-08 06:22:19.3167 INFO  Authors - getAuthors call Started 
+2021-01-08 06:22:19.3517 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 06:22:27.8097 INFO  Books - updateBook Call Started  for Id - 3
+2021-01-08 06:22:27.9552 INFO  Books - updateBook  completed succesfully for id - 3
+2021-01-08 06:28:09.9385 INFO  User - Login Call Started for getting login
+2021-01-08 06:28:10.3830 INFO  User - Login Successfully completed
+2021-01-08 06:28:28.7935 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:28:29.0305 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:28:33.0286 INFO  Authors - getAuthors call Started 
+2021-01-08 06:28:33.2410 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 06:29:09.9556 INFO  Books - createBook Call Started 
+2021-01-08 06:29:12.2552 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0bce4a72-d5d6-4fdc-aeb9-86b51611acce
+Error Number:547,State:0,Class:16
+2021-01-08 06:33:21.0273 INFO  User - Login Call Started for getting login
+2021-01-08 06:33:21.4168 INFO  User - Login Successfully completed
+2021-01-08 06:33:27.7070 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:33:28.0346 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:33:32.3512 INFO  Authors - getAuthors call Started 
+2021-01-08 06:33:32.5662 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 06:34:26.8242 INFO  Books - createBook Call Started 
+2021-01-08 06:34:27.6320 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:77137ecc-73e6-4914-877b-a0b177c38aa5
+Error Number:547,State:0,Class:16
+2021-01-08 06:36:18.3324 INFO  Books - createBook Call Started 
+2021-01-08 06:36:18.3324 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:36:18.4851 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:36:19.0655 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:77137ecc-73e6-4914-877b-a0b177c38aa5
+Error Number:547,State:0,Class:16
+2021-01-08 06:57:55.1173 INFO  User - Login Call Started for getting login
+2021-01-08 06:57:55.4808 INFO  User - Login Successfully completed
+2021-01-08 06:58:00.0229 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:58:00.3016 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:58:04.9919 INFO  Authors - getAuthors call Started 
+2021-01-08 06:58:05.2114 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 06:58:54.6998 INFO  Books - createBook Call Started 
+2021-01-08 06:58:55.2010 INFO  Books - createBook Created succesfully
+2021-01-08 06:59:05.9167 INFO  Books - getBooks Call Started for getting books
+2021-01-08 06:59:05.9757 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 06:59:36.6763 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 06:59:36.7981 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 06:59:36.8759 INFO  Authors - getAuthors call Started 
+2021-01-08 06:59:36.9315 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 07:00:33.9454 INFO  Books - updateBook Call Started  for Id - 13
+2021-01-08 07:00:34.5140 INFO  Books - updateBook  completed succesfully for id - 13
+2021-01-08 20:13:38.3976 INFO  User - Login Call Started for getting login
+2021-01-08 20:13:38.7349 INFO  User - Login Successfully completed
+2021-01-08 20:13:42.3991 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:13:42.6872 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:13:49.3379 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 20:13:49.4485 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 20:13:49.5384 INFO  Authors - getAuthors call Started 
+2021-01-08 20:13:49.6411 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:15:19.5715 INFO  Books - updateBook Call Started  for Id - 13
+2021-01-08 20:15:20.3636 INFO  Books - updateBook  completed succesfully for id - 13
+2021-01-08 20:17:20.3853 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:17:20.4349 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:17:30.7510 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 20:17:30.9052 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 20:17:30.9684 INFO  Authors - getAuthors call Started 
+2021-01-08 20:17:31.0198 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:17:39.5287 INFO  Books - updateBook Call Started  for Id - 13
+2021-01-08 20:17:39.7597 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:17:39.7597 INFO  Books - updateBook  completed succesfully for id - 13
+2021-01-08 20:17:39.8149 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:19:18.4258 INFO  User - Login Call Started for getting login
+2021-01-08 20:19:18.7556 INFO  User - Login Successfully completed
+2021-01-08 20:19:22.9702 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:19:23.2731 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:19:27.2316 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 20:19:27.4249 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 20:19:29.8348 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:19:29.8950 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:19:32.0836 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 20:19:32.2724 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 20:19:32.3509 INFO  Authors - getAuthors call Started 
+2021-01-08 20:19:32.5138 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:20:12.6765 INFO  Books - updateBook Call Started  for Id - 13
+2021-01-08 20:20:13.1496 INFO  Books - updateBook  completed succesfully for id - 13
+2021-01-08 20:20:46.0754 INFO  Authors - getAuthors call Started 
+2021-01-08 20:20:46.3447 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:20:47.4706 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:20:47.5343 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:27:35.4684 INFO  User - Login Call Started for getting login
+2021-01-08 20:27:35.9068 INFO  User - Login Successfully completed
+2021-01-08 20:27:41.4766 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:27:41.7425 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:27:46.2726 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 20:27:46.5585 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 20:27:46.7739 INFO  Authors - getAuthors call Started 
+2021-01-08 20:27:46.9030 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:28:05.8613 INFO  Books - updateBook Call Started  for Id - 13
+2021-01-08 20:28:06.3886 INFO  Books - updateBook  completed succesfully for id - 13
+2021-01-08 20:28:06.4468 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:28:06.4857 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:28:12.0325 INFO  Books - getBook  Call Started for getting book by id 1
+2021-01-08 20:28:12.2452 INFO  Books - getBook  Successfully data fetched for  id 1
+2021-01-08 20:28:12.3742 INFO  Authors - getAuthors call Started 
+2021-01-08 20:28:12.4053 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:28:22.5750 INFO  Books - updateBook Call Started  for Id - 1
+2021-01-08 20:28:22.6853 INFO  Books - updateBook  completed succesfully for id - 1
+2021-01-08 20:28:22.7685 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:28:22.8487 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:49:26.2989 INFO  User - Login Call Started for getting login
+2021-01-08 20:49:26.9219 INFO  User - Login Successfully completed
+2021-01-08 20:49:32.9769 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:49:33.2358 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:49:50.7939 INFO  Books - getBook  Call Started for getting book by id 13
+2021-01-08 20:49:51.0115 INFO  Books - getBook  Successfully data fetched for  id 13
+2021-01-08 20:50:06.3888 INFO  Books - deleteBook Call Started  for Id - 13
+2021-01-08 20:50:06.8580 INFO  Books - deleteBook  completed succesfully for id - 13
+2021-01-08 20:50:07.1711 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:50:07.2472 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:52:21.3014 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:52:21.6739 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:52:25.3917 INFO  Authors - getAuthors call Started 
+2021-01-08 20:52:25.6053 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:53:22.1080 INFO  Books - createBook Call Started 
+2021-01-08 20:53:22.4972 INFO  Books - createBook Created succesfully
+2021-01-08 20:53:48.8897 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:53:48.9517 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:54:01.9718 INFO  Books - getBook  Call Started for getting book by id 14
+2021-01-08 20:54:02.1796 INFO  Books - getBook  Successfully data fetched for  id 14
+2021-01-08 20:54:07.6536 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:54:07.7343 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:54:10.7980 INFO  Books - getBook  Call Started for getting book by id 14
+2021-01-08 20:54:10.8617 INFO  Books - getBook  Successfully data fetched for  id 14
+2021-01-08 20:54:11.0393 INFO  Authors - getAuthors call Started 
+2021-01-08 20:54:11.0786 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-08 20:54:20.4362 INFO  Books - updateBook Call Started  for Id - 14
+2021-01-08 20:54:20.8063 INFO  Books - updateBook  completed succesfully for id - 14
+2021-01-08 20:54:21.1833 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:54:21.2180 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:54:26.5538 INFO  Books - getBook  Call Started for getting book by id 14
+2021-01-08 20:54:26.7012 INFO  Books - getBook  Successfully data fetched for  id 14
+2021-01-08 20:54:32.8993 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:54:33.1025 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:54:37.7774 INFO  Books - getBook  Call Started for getting book by id 14
+2021-01-08 20:54:37.9001 INFO  Books - getBook  Successfully data fetched for  id 14
+2021-01-08 20:54:39.5953 INFO  Books - deleteBook Call Started  for Id - 14
+2021-01-08 20:54:39.6488 INFO  Books - deleteBook  completed succesfully for id - 14
+2021-01-08 20:54:39.7274 INFO  Books - getBooks Call Started for getting books
+2021-01-08 20:54:39.7657 INFO  Books - getBooks Successfully data fetched 
+2021-01-08 20:54:52.8728 INFO  Books - getBook  Call Started for getting book by id 1
+2021-01-08 20:54:53.0623 INFO  Books - getBook  Successfully data fetched for  id 1

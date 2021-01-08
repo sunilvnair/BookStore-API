@@ -108,7 +108,7 @@ namespace BookStore_UI.Services
             client.DefaultRequestHeaders.Authorization =
    new AuthenticationHeaderValue("bearer", await GetBearerToken());
             HttpResponseMessage response = await client.SendAsync(request);
-            if (response.StatusCode == System.Net.HttpStatusCode.Created)
+            if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
                 return true;
             return false;
         }

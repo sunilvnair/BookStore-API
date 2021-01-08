@@ -1,4 +1,5 @@
 ﻿@page "/authors/"
+@attribute [Authorize]
 @inject IAuthorRepository _repo
 
 
@@ -11,52 +12,53 @@
 }
 else
 {
-<AuthorizeView Roles="Administrator">
-    <a href="/authors/create" class="btn btn-primary">
-        <span class="oi oi-plus"></span> Create New Author
-    </a>
-</AuthorizeView>
+    <AuthorizeView Roles="Administrator">
+        <a href="/authors/create" class="btn btn-primary">
+            <span class="oi oi-plus"></span> Create New Author
+        </a>
+    </AuthorizeView>
 
     if (authModel.Count < 1)
     {
         <LoadingMessage Message=" No author details available . Please use 'Create New Author'
                         link for creating new author details" />
     }
-    else { 
-            <table class="table table-striped table-hover">
-                <thead>
+    else
+    {
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>First Name </th>
+                    <th>Last Name </th>
+                    <th>Actions </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var author in authModel)
+                {
                     <tr>
-                        <th>First Name </th>
-                        <th>Last Name </th>
-                        <th>Actions </th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    @foreach (var author in authModel)
-                    {
-                        <tr>
-                            <td>@author.Firstname</td>
-                            <td>@author.Lastname</td>
-                            <td>
-                                <a href="/authors/view/@author.Id" class="btn btn-primary">
-                                    <span class="oi oi-document"></span>
+                        <td>@author.Firstname</td>
+                        <td>@author.Lastname</td>
+                        <td>
+                            <a href="/authors/view/@author.Id" class="btn btn-primary">
+                                <span class="oi oi-document"></span>
+                            </a>
+                            <AuthorizeView Roles="Administrator">
+                                <a href="/authors/edit/@author.Id" class="btn btn-warning">
+                                    <span class="oi oi-pencil"></span>
                                 </a>
-                                <AuthorizeView Roles="Administrator">
-                                    <a href="/authors/edit/@author.Id" class="btn btn-warning">
-                                        <span class="oi oi-pencil"></span>
-                                    </a>
 
-                                    <a href="/authors/delete/@author.Id" class="btn btn-danger">
-                                        <span class="oi oi-delete"></span>
-                                    </a>
-                                </AuthorizeView>
+                                <a href="/authors/delete/@author.Id" class="btn btn-danger">
+                                    <span class="oi oi-delete"></span>
+                                </a>
+                            </AuthorizeView>
 
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     }
 }
 

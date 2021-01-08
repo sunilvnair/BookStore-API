@@ -43,6 +43,8 @@ namespace BookStore_UI
             services.AddScoped<JwtSecurityTokenHandler>();
             services.AddTransient<IAuthenticationRepository, AuthenticationRepository>();
             services.AddTransient<IAuthorRepository, AuthorRepository> ();
+            services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<iFileUpload, FileUpload>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
