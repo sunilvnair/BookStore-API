@@ -172,8 +172,9 @@ namespace BookStore_API.Controllers
                     return internalError("{location} Error while updating data");
                 }
                 _logger.LogInfo($"{location} completed succesfully for id - {id}");
-                return Created("Create", new { author });
-               //return NoContent ();
+                return NoContent();
+                // return Created("Create", new { author });
+             
             }
             catch (Exception e)
             {

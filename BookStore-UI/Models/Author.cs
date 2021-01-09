@@ -19,7 +19,7 @@ namespace BookStore_UI.Models
         public string Lastname { get; set; }
         [Required]
         [DisplayName("Biography")]
-        [StringLength(250)]
+        [StringLength(2500)]
         public string Bio { get; set; }
         public virtual IList<Book> Books { get; set; }
     }

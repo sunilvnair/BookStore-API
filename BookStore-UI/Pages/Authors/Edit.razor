@@ -1,8 +1,8 @@
 ﻿@page "/authors/edit/{id}"
-@attribute [Authorize(Roles="Administrator")]
+@attribute [Authorize(Roles = "Administrator")]
 @inject IAuthorRepository _repo
 @inject NavigationManager _navMan
-
+@inject IToastService _toastService
 
 <PageTitle Title="Edit Author Details" />
 
@@ -71,10 +71,12 @@ else
         bool isSuccess = await _repo.Update(Endpoints.AuthorsEndpoint, authModel, authModel.Id);
         if (isSuccess)
         {
+            _toastService.ShowInfo("Author data modified Successfully.", "");
             BackToList();
         }
         else
         {
+            _toastService.ShowError("Error while modifying Author details.", "");
             isFaild = true;
         }
 

@@ -29,7 +29,7 @@ namespace BookStore_API.DTOs
 		public int? Year { get; set; }
 		[Required]
 		public string ISBN { get; set; }
-		[StringLength(500)]
+		[StringLength(2500)]
 		public string Summary { get; set; }
 		public string Image { get; set; }
 		public decimal? Price { get; set; }
@@ -45,7 +45,7 @@ namespace BookStore_API.DTOs
 		public int? Year { get; set; }
 		[Required]
 		public string ISBN { get; set; }
-		[StringLength(500)]
+		[StringLength(2500)]
 		public string Summary { get; set; }
 		public string Image { get; set; }
 		public decimal? Price { get; set; }

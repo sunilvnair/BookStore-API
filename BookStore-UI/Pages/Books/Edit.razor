@@ -4,7 +4,7 @@
 @inject IAuthorRepository _authRepo
 @inject NavigationManager _navMan
 @inject iFileUpload _uploadFile
-
+@inject IToastService _toastService
 
 <PageTitle Title="Edit Book Details" />
 @if (int.Parse(Id) < 1 || string.IsNullOrWhiteSpace(Id))
@@ -21,70 +21,73 @@ else if (isFaild)
 }
 else
 {
-    <EditForm Model="bookModel" OnValidSubmit="UpdateBook">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
-        <div class="form-group">
-            <label for="Title">Title</label>
-            <InputText class="form-control" id="Title" @bind-Value="bookModel.Title" />
-            <ValidationMessage For="@(() => bookModel.Title)" />
-        </div>
-        <div class="form-group">
-            <label for="Year">Year</label>
-            <InputNumber class="form-control" id="Year" @bind-Value="bookModel.Year" />
-            <ValidationMessage For="@(() => bookModel.Year)" />
-        </div>
-        <div class="form-group">
-            <label for="ISBN">ISBN</label>
-            <InputText class="form-control" id="ISBN" @bind-Value="bookModel.ISBN" />
-            <ValidationMessage For="@(() => bookModel.ISBN)" />
-        </div>
-        <div class="form-group">
-            <label for="Price">Price</label>
-            <InputNumber class="form-control" id="Price" @bind-Value="bookModel.Price" />
-            <ValidationMessage For="@(() => bookModel.Price)" />
-        </div>
-        <div class="form-group">
-            <label for="authors">Author</label>
-            <select class="form-control" id="authors" @bind="bookModel.AuthorId">
-                @if (Authors != null)
+<EditForm Model="bookModel" OnValidSubmit="UpdateBook">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <InputText class="form-control" id="Title" @bind-Value="bookModel.Title" />
+        <ValidationMessage For="@(() => bookModel.Title)" />
+    </div>
+    <div class="form-group">
+        <label for="Year">Year</label>
+        <InputNumber class="form-control" id="Year" @bind-Value="bookModel.Year" />
+        <ValidationMessage For="@(() => bookModel.Year)" />
+    </div>
+    <div class="form-group">
+        <label for="ISBN">ISBN</label>
+        <InputText class="form-control" id="ISBN" @bind-Value="bookModel.ISBN" />
+        <ValidationMessage For="@(() => bookModel.ISBN)" />
+    </div>
+    <div class="form-group">
+        <label for="Price">Price</label>
+        <InputNumber class="form-control" id="Price" @bind-Value="bookModel.Price" />
+        <ValidationMessage For="@(() => bookModel.Price)" />
+    </div>
+    <div class="form-group">
+        <label for="authors">Author</label>
+        <select class="form-control" id="authors" @bind="bookModel.AuthorId">
+            @if (Authors != null)
+            {
+                @foreach (var author in Authors)
                 {
-                    @foreach (var author in Authors)
-                    {
-                        <option value="@author.Id"> @author.Firstname @author.Lastname</option>
-                    }
+                    <option value="@author.Id"> @author.Firstname @author.Lastname</option>
                 }
-
-            </select>
-
-        </div>
-
-        <div class="form-group">
-            <label for="bookCover">Book Cover</label>
-            <InputFile OnChange="DoFileSelection" />
-            @if (isInValidFileType)
-            {
-                <ErrorMsg Message="=" Only image type of jpeg,png,jpg are alloweded />
-            }
-            @if (!string.IsNullOrWhiteSpace(imageDataURL))
-            {
-                <img src="@imageDataURL" style="height:100px;width:100px" />
-            }
-            else if (!string.IsNullOrWhiteSpace(bookModel.Image))
-            {
-                <img src="/uploads/@bookModel.Image" style="height:100px;width:100px" />
             }
 
-        </div>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="summary">Summary</label>
+        <InputTextArea @bind-Value="bookModel.Summary" class="form-control" id="summary" />
+    </div>
 
-        <button class="btn btn-primary" type="submit">
-            <span class="glyphicon glyphicon-floppy-disk"></span>Save Changes
-        </button>
-        <button @onclick="BackToList" class="btn btn-outline-secondary">
-            <span class="oi oi-media-skip-backward"></span> Back to list
-        </button>
+    <div class="form-group">
+        <label for="bookCover">Book Cover</label>
+        <InputFile OnChange="DoFileSelection" />
+        @if (isInValidFileType)
+        {
+            <ErrorMsg Message="=" Only image type of jpeg,png,jpg are alloweded />
+        }
+        @if (!string.IsNullOrWhiteSpace(imageDataURL))
+        {
+            <img src="@imageDataURL" style="height:100px;width:100px" />
+        }
+        else if (!string.IsNullOrWhiteSpace(bookModel.Image))
+        {
+            <img src="/uploads/@bookModel.Image" style="height:100px;width:100px" />
+        }
 
-    </EditForm>
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+        <span class="glyphicon glyphicon-floppy-disk"></span>Save Changes
+    </button>
+    <button @onclick="BackToList" class="btn btn-outline-secondary">
+        <span class="oi oi-media-skip-backward"></span> Back to list
+    </button>
+
+</EditForm>
 }
 
 
@@ -173,9 +176,10 @@ else
                 bookModel.Image = string.Empty;
             }
 
-             isSuccess = await _repo.Update(Endpoints.BooksEndpoint, bookModel, bookModel.Id);
+            isSuccess = await _repo.Update(Endpoints.BooksEndpoint, bookModel, bookModel.Id);
             if (isSuccess)
             {
+                _toastService.ShowSuccess("Book data modified successfully. " , "");
                 BackToList();
             }
             else

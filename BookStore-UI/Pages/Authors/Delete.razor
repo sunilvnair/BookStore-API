@@ -2,8 +2,7 @@
 @attribute [Authorize]
 @inject IAuthorRepository _repo
 @inject NavigationManager _navMan
-
-
+@inject IToastService _toastService
 
 <PageTitle Title="Are You Sure You Want to Delete Author Details" />
 @if (isFaild)
@@ -91,6 +90,7 @@ else
         bool isSuccess = await _repo.Delete(Endpoints.AuthorsEndpoint, authModel.Id);
         if (isSuccess)
         {
+            _toastService.ShowSuccess("Author deleted Successfully.", "");
             BackToList();
         }
         else

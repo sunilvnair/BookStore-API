@@ -1,0 +1,458 @@
+2021-01-09 05:59:13.9539 INFO  User - Login Call Started for getting login
+2021-01-09 05:59:14.2497 INFO  User - Login Successfully completed
+2021-01-09 06:11:54.1657 INFO  User - Login Call Started for getting login
+2021-01-09 06:11:54.4792 INFO  User - Login Successfully completed
+2021-01-09 06:21:22.3706 INFO  User - Login Call Started for getting login
+2021-01-09 06:21:22.6406 INFO  User - Login Successfully completed
+2021-01-09 06:31:06.4499 INFO  User - Login Call Started for getting login
+2021-01-09 06:31:06.8425 INFO  User - Login Successfully completed
+2021-01-09 06:38:20.9214 INFO  User - Login Call Started for getting login
+2021-01-09 06:38:21.3115 INFO  User - Login Successfully completed
+2021-01-09 06:44:00.4455 INFO  User - Login Call Started for getting login
+2021-01-09 06:44:00.8348 INFO  User - Login Successfully completed
+2021-01-09 06:44:19.7361 INFO  User - Login Call Started for getting login
+2021-01-09 06:44:19.8461 INFO  User - Login Successfully completed
+2021-01-09 07:20:09.3462 INFO  User - Login Call Started for getting login
+2021-01-09 07:20:09.6517 INFO  User - Login Successfully completed
+2021-01-09 07:26:10.8922 INFO  User - Login Call Started for getting login
+2021-01-09 07:26:11.2530 INFO  User - Login Successfully completed
+2021-01-09 07:34:14.1273 INFO  User - Login Call Started for getting login
+2021-01-09 07:34:14.4782 INFO  User - Login Successfully completed
+2021-01-09 09:02:07.4440 INFO  User - Login Call Started for getting login
+2021-01-09 09:02:07.7994 INFO  User - Login Successfully completed
+2021-01-09 09:02:13.5583 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:02:13.7782 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 09:03:52.8379 INFO  Books - getBook  Call Started for getting book by id 4
+2021-01-09 09:03:53.0683 INFO  Books - getBook  Successfully data fetched for  id 4
+2021-01-09 09:04:00.0006 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:04:00.0705 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 09:06:28.5065 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:06:28.8921 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 09:06:33.7234 INFO  Books - getBook  Call Started for getting book by id 4
+2021-01-09 09:06:33.8030 INFO  Books - getBook  Successfully data fetched for  id 4
+2021-01-09 09:06:47.4291 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:06:47.4904 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 09:06:59.7960 INFO  Books - getBook  Call Started for getting book by id 4
+2021-01-09 09:06:59.8848 INFO  Books - getBook  Successfully data fetched for  id 4
+2021-01-09 09:06:59.9727 INFO  Authors - getAuthors call Started 
+2021-01-09 09:07:00.0631 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 09:07:06.4380 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:07:06.5060 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 09:07:06.5391 INFO  Books - updateBook Call Started  for Id - 4
+2021-01-09 09:07:06.8290 INFO  Books - updateBook  completed succesfully for id - 4
+2021-01-09 09:07:08.5107 INFO  Authors - getAuthors call Started 
+2021-01-09 09:07:08.5422 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 09:10:22.3505 INFO  Books - createBook Call Started 
+2021-01-09 09:10:22.8296 ERROR  Books - createBook - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c9521523-6012-4db4-ba03-65b2e52c5199
+Error Number:547,State:0,Class:16
+2021-01-09 09:10:30.5296 INFO  Books - createBook Call Started 
+2021-01-09 09:10:30.6218 INFO  Books - createBook Created succesfully
+2021-01-09 09:10:30.7516 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:10:30.7784 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 09:10:42.6794 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 09:10:42.8317 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 09:10:46.9057 INFO  Books - getBooks Call Started for getting books
+2021-01-09 09:10:47.0235 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 14:27:42.5612 INFO  User - Login Call Started for getting login
+2021-01-09 14:27:42.8857 INFO  User - Login Successfully completed
+2021-01-09 14:30:41.3332 INFO  Authors - getAuthors call Started 
+2021-01-09 14:30:41.6688 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:30:46.1685 INFO  Authors - getAuthor call Started for getting author by id 4
+2021-01-09 14:30:46.3570 INFO  Authors - getAuthor Successfully data  by id 4
+2021-01-09 14:31:38.3469 INFO  Authors - updateAuthor call Started  for Id - 4
+2021-01-09 14:31:38.6256 INFO  Authors - updateAuthor completed succesfully for id - 4
+2021-01-09 14:31:47.5958 INFO  Authors - updateAuthor call Started  for Id - 4
+2021-01-09 14:31:47.6823 INFO  Authors - updateAuthor completed succesfully for id - 4
+2021-01-09 14:32:08.8473 INFO  Authors - updateAuthor call Started  for Id - 4
+2021-01-09 14:32:08.9673 INFO  Authors - updateAuthor completed succesfully for id - 4
+2021-01-09 14:32:08.9673 INFO  Authors - getAuthors call Started 
+2021-01-09 14:32:09.0164 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:37:01.4241 INFO  User - Login Call Started for getting login
+2021-01-09 14:37:01.9243 INFO  User - Login Successfully completed
+2021-01-09 14:37:05.8389 INFO  Authors - getAuthors call Started 
+2021-01-09 14:37:06.1408 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:37:11.1250 INFO  Authors - getAuthor call Started for getting author by id 5
+2021-01-09 14:37:11.2712 INFO  Authors - getAuthor Successfully data  by id 5
+2021-01-09 14:40:16.5653 INFO  Authors - updateAuthor call Started  for Id - 5
+2021-01-09 14:40:16.8604 INFO  Authors - updateAuthor completed succesfully for id - 5
+2021-01-09 14:40:16.9345 INFO  Authors - getAuthors call Started 
+2021-01-09 14:40:17.0573 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:40:39.3828 INFO  Authors - getAuthor call Started for getting author by id 17
+2021-01-09 14:40:39.4920 INFO  Authors - getAuthor Successfully data  by id 17
+2021-01-09 14:40:42.8061 INFO  Authors - deleteAuthor Call Started  for Id - 17
+2021-01-09 14:40:42.8874 INFO  Authors - deleteAuthor completed succesfully for id - 17
+2021-01-09 14:40:42.9443 INFO  Authors - getAuthors call Started 
+2021-01-09 14:40:42.9674 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:40:51.4270 INFO  Books - getBooks Call Started for getting books
+2021-01-09 14:40:51.5367 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 14:40:56.1852 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 14:40:56.2911 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 14:40:59.5117 INFO  Books - getBooks Call Started for getting books
+2021-01-09 14:40:59.5632 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 14:41:02.0075 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 14:41:02.2102 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 14:41:02.3340 INFO  Authors - getAuthors call Started 
+2021-01-09 14:41:02.3873 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:43:02.0151 INFO  Books - updateBook Call Started  for Id - 3
+2021-01-09 14:43:02.5993 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'Kayar (English: Coir) is a 1978 Malayalam epic novel written by Thakazhi . Widely considered one of '.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6bec21bf-9187-4e73-93a5-bc9ac6e2c593
+Error Number:2628,State:1,Class:16
+2021-01-09 14:43:16.6992 INFO  Books - getBooks Call Started for getting books
+2021-01-09 14:43:16.7783 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 14:43:20.4531 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 14:43:20.5962 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 14:43:31.5667 INFO  Authors - getAuthor call Started for getting author by id 6
+2021-01-09 14:43:31.6099 INFO  Authors - getAuthor Successfully data  by id 6
+2021-01-09 14:43:43.0048 INFO  Authors - getAuthors call Started 
+2021-01-09 14:43:43.0732 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:49:50.3837 INFO  User - Login Call Started for getting login
+2021-01-09 14:49:50.7255 INFO  User - Login Successfully completed
+2021-01-09 14:50:11.3354 INFO  Books - getBooks Call Started for getting books
+2021-01-09 14:50:11.5914 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 14:50:15.7933 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 14:50:15.9782 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 14:50:19.5720 INFO  Authors - getAuthor call Started for getting author by id 6
+2021-01-09 14:50:19.7052 INFO  Authors - getAuthor Successfully data  by id 6
+2021-01-09 14:54:50.5921 INFO  Authors - getAuthors call Started 
+2021-01-09 14:54:50.6719 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:55:07.1991 INFO  Authors - getAuthor call Started for getting author by id 5
+2021-01-09 14:55:07.2667 INFO  Authors - getAuthor Successfully data  by id 5
+2021-01-09 14:55:20.0789 INFO  Books - getBooks Call Started for getting books
+2021-01-09 14:55:20.2614 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 14:55:24.7286 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 14:55:24.8805 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 14:55:24.9250 INFO  Authors - getAuthors call Started 
+2021-01-09 14:55:24.9489 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 14:58:06.6354 INFO  Books - updateBook Call Started  for Id - 16
+2021-01-09 14:58:07.3315 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'The Immortals of Meluha is the first book of Amish Tripathi, first book of Amishverse, and also the '.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:c5f5ac2e-39a3-4d88-8564-aa01f0fe62ad
+Error Number:2628,State:1,Class:16
+2021-01-09 14:58:11.9868 INFO  Books - getBooks Call Started for getting books
+2021-01-09 14:58:12.0974 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 17:56:30.9780 INFO  User - Login Call Started for getting login
+2021-01-09 17:56:31.3492 INFO  User - Login Successfully completed
+2021-01-09 17:57:24.1861 INFO  Authors - getAuthors call Started 
+2021-01-09 17:57:24.4080 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:57:28.7169 INFO  Authors - getAuthor call Started for getting author by id 1
+2021-01-09 17:57:28.8113 INFO  Authors - getAuthor Successfully data  by id 1
+2021-01-09 17:57:36.4677 INFO  Authors - updateAuthor call Started  for Id - 1
+2021-01-09 17:57:36.7752 INFO  Authors - updateAuthor completed succesfully for id - 1
+2021-01-09 17:57:36.9787 INFO  Authors - getAuthors call Started 
+2021-01-09 17:57:37.0086 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:57:39.8966 INFO  Authors - getAuthor call Started for getting author by id 1
+2021-01-09 17:57:40.0346 INFO  Authors - getAuthor Successfully data  by id 1
+2021-01-09 17:57:43.7472 INFO  Authors - updateAuthor call Started  for Id - 1
+2021-01-09 17:57:43.7787 INFO  Authors - getAuthors call Started 
+2021-01-09 17:57:43.8474 INFO  Authors - updateAuthor completed succesfully for id - 1
+2021-01-09 17:57:43.8831 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:58:03.4931 INFO  Authors - createAuthor  call Started
+2021-01-09 17:58:03.6701 INFO  Authors - createAuthor  created succesfully
+2021-01-09 17:58:03.7264 INFO  Authors - getAuthors call Started 
+2021-01-09 17:58:03.7517 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:58:11.7486 INFO  Authors - getAuthor call Started for getting author by id 20
+2021-01-09 17:58:11.9541 INFO  Authors - getAuthor Successfully data  by id 20
+2021-01-09 17:58:14.0980 INFO  Authors - updateAuthor call Started  for Id - 20
+2021-01-09 17:58:14.2153 INFO  Authors - getAuthors call Started 
+2021-01-09 17:58:14.2472 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:58:14.2472 INFO  Authors - updateAuthor completed succesfully for id - 20
+2021-01-09 17:58:16.5591 INFO  Authors - getAuthor call Started for getting author by id 20
+2021-01-09 17:58:16.6427 INFO  Authors - getAuthor Successfully data  by id 20
+2021-01-09 17:58:19.1974 INFO  Authors - deleteAuthor Call Started  for Id - 20
+2021-01-09 17:58:19.3151 INFO  Authors - deleteAuthor completed succesfully for id - 20
+2021-01-09 17:58:19.3855 INFO  Authors - getAuthors call Started 
+2021-01-09 17:58:19.4335 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:58:29.1940 INFO  Books - getBooks Call Started for getting books
+2021-01-09 17:58:29.2862 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 17:58:33.9793 INFO  Books - getBook  Call Started for getting book by id 1
+2021-01-09 17:58:34.0733 INFO  Books - getBook  Successfully data fetched for  id 1
+2021-01-09 17:58:34.1269 INFO  Authors - getAuthors call Started 
+2021-01-09 17:58:34.1544 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:58:39.1369 INFO  Books - updateBook Call Started  for Id - 1
+2021-01-09 17:58:39.2473 INFO  Books - updateBook  completed succesfully for id - 1
+2021-01-09 17:58:39.3504 INFO  Books - getBooks Call Started for getting books
+2021-01-09 17:58:39.3907 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 17:58:46.4499 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 17:58:46.5874 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 17:58:46.6370 INFO  Authors - getAuthors call Started 
+2021-01-09 17:58:46.6591 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 17:58:53.3319 INFO  Books - updateBook Call Started  for Id - 16
+2021-01-09 17:58:53.4895 INFO  Books - updateBook  completed succesfully for id - 16
+2021-01-09 17:58:53.5647 INFO  Books - getBooks Call Started for getting books
+2021-01-09 17:58:53.5896 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 17:59:00.0645 INFO  Authors - getAuthors call Started 
+2021-01-09 17:59:00.1647 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:00:03.2328 INFO  Books - createBook Call Started 
+2021-01-09 18:00:03.3332 INFO  Books - createBook Created succesfully
+2021-01-09 18:00:03.5219 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:00:03.5796 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:00:33.0728 INFO  Books - getBook  Call Started for getting book by id 17
+2021-01-09 18:00:33.1909 INFO  Books - getBook  Successfully data fetched for  id 17
+2021-01-09 18:00:33.2910 INFO  Authors - getAuthors call Started 
+2021-01-09 18:00:33.3152 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:00:38.4537 INFO  Books - updateBook Call Started  for Id - 17
+2021-01-09 18:00:38.9264 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'The Immortals of Meluha is the first book of Amish Tripathi, first book of Amishverse, and also the '.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:7bb46eaf-87ef-41f5-9ebb-8d8cd68390c6
+Error Number:2628,State:1,Class:16
+2021-01-09 18:00:47.5455 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:00:47.6877 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:00:51.1464 INFO  Books - getBook  Call Started for getting book by id 17
+2021-01-09 18:00:51.2891 INFO  Books - getBook  Successfully data fetched for  id 17
+2021-01-09 18:00:51.3631 INFO  Authors - getAuthors call Started 
+2021-01-09 18:00:51.4046 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:01:47.3373 INFO  Books - updateBook Call Started  for Id - 17
+2021-01-09 18:01:47.3990 INFO  Books - updateBook  completed succesfully for id - 17
+2021-01-09 18:01:47.5141 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:01:47.5419 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:01:51.1053 INFO  Books - getBook  Call Started for getting book by id 17
+2021-01-09 18:01:51.2587 INFO  Books - getBook  Successfully data fetched for  id 17
+2021-01-09 18:01:51.3023 INFO  Authors - getAuthors call Started 
+2021-01-09 18:01:51.3326 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:02:12.4225 INFO  Books - updateBook Call Started  for Id - 17
+2021-01-09 18:02:12.5486 INFO  Books - updateBook  completed succesfully for id - 17
+2021-01-09 18:02:12.9695 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:02:13.5061 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:02:17.3597 INFO  Books - getBook  Call Started for getting book by id 17
+2021-01-09 18:02:17.5053 INFO  Books - getBook  Successfully data fetched for  id 17
+2021-01-09 18:02:26.5573 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:02:26.6189 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:03:02.8074 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 18:03:02.8776 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 18:03:02.9866 INFO  Authors - getAuthors call Started 
+2021-01-09 18:03:03.0157 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:03:38.5699 INFO  Books - updateBook Call Started  for Id - 16
+2021-01-09 18:03:38.7932 INFO  Books - updateBook  completed succesfully for id - 16
+2021-01-09 18:03:38.8862 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:03:38.9217 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:03:57.1012 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 18:03:57.2206 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 18:03:57.3002 INFO  Authors - getAuthors call Started 
+2021-01-09 18:03:57.3248 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:04:05.4958 INFO  Books - updateBook Call Started  for Id - 16
+2021-01-09 18:04:05.7575 INFO  Books - updateBook  completed succesfully for id - 16
+2021-01-09 18:04:05.9866 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:04:06.1290 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:04:22.7059 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 18:04:22.8501 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 18:04:25.2744 INFO  Authors - getAuthor call Started for getting author by id 5
+2021-01-09 18:04:25.3274 INFO  Authors - getAuthor Successfully data  by id 5
+2021-01-09 18:04:33.6715 INFO  Authors - getAuthors call Started 
+2021-01-09 18:04:33.7380 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:04:39.9838 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:04:40.1677 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:05:31.6298 INFO  Authors - getAuthors call Started 
+2021-01-09 18:05:31.6716 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:05:51.4168 INFO  Authors - getAuthors call Started 
+2021-01-09 18:05:51.5192 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:05:53.9090 INFO  Authors - getAuthor call Started for getting author by id 6
+2021-01-09 18:05:53.9693 INFO  Authors - getAuthor Successfully data  by id 6
+2021-01-09 18:06:13.3187 INFO  User - Login Call Started for getting login
+2021-01-09 18:06:13.4858 INFO  User - Login Successfully completed
+2021-01-09 18:06:19.2907 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:06:19.3594 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 18:06:21.9728 INFO  Authors - getAuthors call Started 
+2021-01-09 18:06:22.0102 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 18:06:23.8531 INFO  Books - getBooks Call Started for getting books
+2021-01-09 18:06:23.8694 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:45:38.9090 INFO  User - Login Call Started for getting login
+2021-01-09 19:45:39.3202 INFO  User - Login Successfully completed
+2021-01-09 19:45:43.6570 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:45:43.9080 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:46:01.6771 INFO  User - Login Call Started for getting login
+2021-01-09 19:46:01.7856 INFO  User - Login Successfully completed
+2021-01-09 19:46:22.5197 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:46:22.6054 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:46:25.8111 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 19:46:25.8723 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 19:46:25.9328 INFO  Authors - getAuthors call Started 
+2021-01-09 19:46:26.0024 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:46:51.5594 INFO  Books - updateBook Call Started  for Id - 3
+2021-01-09 19:46:52.2643 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'Kayar (English: Coir) is a 1978 Malayalam epic novel written by Thakazhi Sivasankara Pillai. Widely '.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e29273b2-f068-4f65-9418-4b78d59b32cc
+Error Number:2628,State:1,Class:16
+2021-01-09 19:46:59.8970 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:46:59.9772 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:47:05.1599 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 19:47:05.3251 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 19:47:05.4438 INFO  Authors - getAuthors call Started 
+2021-01-09 19:47:05.5147 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:47:43.8016 INFO  Books - updateBook Call Started  for Id - 3
+2021-01-09 19:47:44.2245 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'Kayar (English: Coir) is a 1978 Malayalam epic novel written by Thakazhi Sivasankara Pillai. Widely '.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e29273b2-f068-4f65-9418-4b78d59b32cc
+Error Number:2628,State:1,Class:16
+2021-01-09 19:47:58.4676 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:47:58.5961 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:48:01.9149 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 19:48:02.1045 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 19:48:02.2138 INFO  Authors - getAuthors call Started 
+2021-01-09 19:48:02.2573 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:48:14.5160 INFO  Books - updateBook Call Started  for Id - 3
+2021-01-09 19:48:14.6415 INFO  Books - updateBook  completed succesfully for id - 3
+2021-01-09 19:48:14.7629 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:48:14.7999 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:48:31.2273 INFO  Books - getBook  Call Started for getting book by id 3
+2021-01-09 19:48:31.3877 INFO  Books - getBook  Successfully data fetched for  id 3
+2021-01-09 19:48:37.8885 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:48:37.9414 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:48:41.2175 INFO  Books - getBook  Call Started for getting book by id 4
+2021-01-09 19:48:41.2867 INFO  Books - getBook  Successfully data fetched for  id 4
+2021-01-09 19:48:41.3927 INFO  Authors - getAuthors call Started 
+2021-01-09 19:48:41.4186 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:49:20.7743 INFO  Books - updateBook Call Started  for Id - 4
+2021-01-09 19:49:20.8544 INFO  Books - updateBook  completed succesfully for id - 4
+2021-01-09 19:49:20.9550 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:49:21.0059 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:49:25.8711 INFO  Books - getBook  Call Started for getting book by id 5
+2021-01-09 19:49:25.9558 INFO  Books - getBook  Successfully data fetched for  id 5
+2021-01-09 19:49:26.0460 INFO  Authors - getAuthors call Started 
+2021-01-09 19:49:26.0755 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:50:08.0270 INFO  Books - updateBook Call Started  for Id - 5
+2021-01-09 19:50:08.5439 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'Mathilukal (Malayalam: മതിലുകൾ, meaning Walls) is a Malayalam novel written by Vaikom Muhammad Bashe'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e29273b2-f068-4f65-9418-4b78d59b32cc
+Error Number:2628,State:1,Class:16
+2021-01-09 19:50:11.0845 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:50:11.1627 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:50:15.1536 INFO  Books - getBook  Call Started for getting book by id 5
+2021-01-09 19:50:15.2287 INFO  Books - getBook  Successfully data fetched for  id 5
+2021-01-09 19:50:15.3079 INFO  Authors - getAuthors call Started 
+2021-01-09 19:50:15.3637 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:50:52.6369 INFO  Books - updateBook Call Started  for Id - 5
+2021-01-09 19:50:53.1016 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'Mathilukal (Malayalam: മതിലുകൾ, meaning Walls) is a Malayalam novel written by Vaikom Muhammad Bashe'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e29273b2-f068-4f65-9418-4b78d59b32cc
+Error Number:2628,State:1,Class:16
+2021-01-09 19:50:59.2713 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:50:59.3079 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:51:04.3802 INFO  Books - getBook  Call Started for getting book by id 5
+2021-01-09 19:51:04.4836 INFO  Books - getBook  Successfully data fetched for  id 5
+2021-01-09 19:51:04.7117 INFO  Authors - getAuthors call Started 
+2021-01-09 19:51:04.7624 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:51:23.0329 INFO  Books - updateBook Call Started  for Id - 5
+2021-01-09 19:51:23.4647 ERROR  Books - updateBook  - An error occurred while updating the entries. See the inner exception for details. - Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'BookStore.dbo.Books', column 'Summary'. Truncated value: 'Mathilukal ( meaning Walls) is a Malayalam novel written by Vaikom Muhammad Basheer in 1965. It is o'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:e29273b2-f068-4f65-9418-4b78d59b32cc
+Error Number:2628,State:1,Class:16
+2021-01-09 19:51:27.8875 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:51:27.9640 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:51:31.1585 INFO  Books - getBook  Call Started for getting book by id 5
+2021-01-09 19:51:31.2912 INFO  Books - getBook  Successfully data fetched for  id 5
+2021-01-09 19:51:31.3500 INFO  Authors - getAuthors call Started 
+2021-01-09 19:51:31.3800 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:51:43.4744 INFO  Books - updateBook Call Started  for Id - 5
+2021-01-09 19:51:43.5549 INFO  Books - updateBook  completed succesfully for id - 5
+2021-01-09 19:51:43.6495 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:51:43.6912 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:51:49.8079 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 19:51:49.8690 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 19:51:49.9826 INFO  Authors - getAuthors call Started 
+2021-01-09 19:51:50.0096 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 19:51:59.3489 INFO  Books - updateBook Call Started  for Id - 16
+2021-01-09 19:51:59.4603 INFO  Books - getBooks Call Started for getting books
+2021-01-09 19:51:59.5211 INFO  Books - updateBook  completed succesfully for id - 16
+2021-01-09 19:51:59.5412 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 19:52:02.5644 INFO  Books - getBook  Call Started for getting book by id 17
+2021-01-09 19:52:02.8387 INFO  Books - getBook  Successfully data fetched for  id 17

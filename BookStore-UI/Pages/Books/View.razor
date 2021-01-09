@@ -38,7 +38,8 @@ else
             <tr>
 
                 <td> <strong> Price </strong>   </td>
-                <td>  @bookModel.Price  </td>
+
+                <td>@string.Format(indCul, "{0:C}", bookModel.Price)</td>
             </tr>
             <tr>
 
@@ -54,7 +55,12 @@ else
 
 
             </tr>
-
+            <tr>
+                <td>
+                    <strong>Summary</strong>
+                </td>
+                <td>@bookModel.Summary</td>
+            </tr>
         </table>
     </div>
     <div class="col-4">
@@ -66,6 +72,7 @@ else
 @code {
     [Parameter]
     public string Id { get; set; }
+    private CultureInfo indCul = new CultureInfo("hi-IN");
 
     private Book bookModel = new Book();
     protected async override Task OnInitializedAsync()

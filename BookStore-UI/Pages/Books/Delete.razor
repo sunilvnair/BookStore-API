@@ -4,7 +4,7 @@
 
 @inject NavigationManager _navMan
 @inject iFileUpload _uploadFile
-
+@inject IToastService _toastService
 
 
 
@@ -57,7 +57,12 @@ else
 
 
                 </tr>
-
+                <tr>
+                    <td>
+                        <strong>Summary</strong>
+                    </td>
+                    <td>@bookModel.Summary</td>
+                </tr>
             </table>
         </div>
         <div class="col-4">
@@ -90,6 +95,7 @@ else
         bool isSuccess = await _repo.Delete(Endpoints.BooksEndpoint, bookModel.Id);
         if (isSuccess)
         {
+            _toastService.ShowSuccess("Book deleted successfully." ,"");
             BackToList();
         }
 

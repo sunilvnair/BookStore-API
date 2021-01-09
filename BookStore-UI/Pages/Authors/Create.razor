@@ -2,6 +2,7 @@
 @attribute [Authorize]
 @inject IAuthorRepository _repo
 @inject NavigationManager _navMan
+@inject IToastService _toastService
 
 
 <PageTitle Title="Add Author Details" />
@@ -59,10 +60,12 @@
         bool isSuccess = await _repo.Create(Endpoints.AuthorsEndpoint, authModel);
         if (isSuccess)
         {
+            _toastService.ShowSuccess("Author Created Successfully.", "");
             BackToList();
         }
         else
         {
+            _toastService.ShowError("Error while creating Author details.", "");
             isFaild = true;
         }
 

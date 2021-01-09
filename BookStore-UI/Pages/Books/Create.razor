@@ -4,13 +4,13 @@
 @inject IAuthorRepository _AuthRepo
 @inject NavigationManager _navMan
 @inject iFileUpload _uploadFile
-
+@inject IToastService _toastService
 
 <PageTitle Title="Add Book Details" />
 @if (isFaild)
 {
     <ErrorMsg Message="Something went wrong with operation" />
-  }
+}
 
 <EditForm Model="bookModel" OnValidSubmit="CreateBook">
     <DataAnnotationsValidator />
@@ -49,7 +49,10 @@
         </select>
 
     </div>
-
+    <div class="form-group">
+        <label for="summary">Summary</label>
+        <InputTextArea @bind-Value="bookModel.Summary" class="form-control" id="summary" />
+    </div>
     <div class="form-group">
         <label for="bookCover">Book Cover</label>
         <InputFile OnChange="DoFileSelection" />
@@ -129,7 +132,7 @@
     {
         if (!isInValidFileType)
         {
-            if (file !=null)
+            if (file != null)
             {
                 var ext = Path.GetExtension(file.Name);
                 var picId = Guid.NewGuid().ToString().Replace("-", "");
@@ -143,13 +146,14 @@
             bool isSuccess = await _repo.Create(Endpoints.BooksEndpoint, bookModel);
             if (isSuccess)
             {
+                _toastService.ShowSuccess("Book data created successfully .","");
                 BackToList();
             }
             else
             {
                 isFaild = true;
                 _uploadFile.RemoveFile(bookModel.Image);
-                
+
             }
         }
 

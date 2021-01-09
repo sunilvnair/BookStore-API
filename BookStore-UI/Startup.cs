@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using Blazored.Toast;
 
 namespace BookStore_UI
 {
@@ -36,6 +37,8 @@ namespace BookStore_UI
             services.AddServerSideBlazor();
             // services.AddSingleton<WeatherForecastService>();
             services.AddBlazoredLocalStorage();
+            services.AddBlazoredToast();
+
             services.AddHttpClient();
             services.AddScoped<ApiAuthenticationStateProvider>();
             services.AddScoped<AuthenticationStateProvider>(p =>
