@@ -1,0 +1,14 @@
+2021-01-10 05:08:12.0386 INFO  User - Login Call Started for getting login
+2021-01-10 05:08:12.3424 INFO  User - Login Successfully completed
+2021-01-10 05:08:56.8899 INFO  Authors - getAuthors call Started 
+2021-01-10 05:08:57.1679 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-10 05:09:01.5297 INFO  Books - getBooks Call Started for getting books
+2021-01-10 05:09:01.6453 INFO  Books - getBooks Successfully data fetched 
+2021-01-10 05:09:08.9972 INFO  Books - getBook  Call Started for getting book by id 17
+2021-01-10 05:09:09.0750 INFO  Books - getBook  Successfully data fetched for  id 17
+2021-01-10 05:09:12.3886 INFO  Authors - getAuthor call Started for getting author by id 5
+2021-01-10 05:09:12.5764 INFO  Authors - getAuthor Successfully data  by id 5
+2021-01-10 05:09:18.7268 INFO  Authors - getAuthors call Started 
+2021-01-10 05:09:18.8524 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-10 05:09:22.3250 INFO  Books - getBooks Call Started for getting books
+2021-01-10 05:09:22.3929 INFO  Books - getBooks Successfully data fetched 

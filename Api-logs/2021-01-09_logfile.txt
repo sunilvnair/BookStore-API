@@ -456,3 +456,19 @@ Error Number:2628,State:1,Class:16
 2021-01-09 19:51:59.5412 INFO  Books - getBooks Successfully data fetched 
 2021-01-09 19:52:02.5644 INFO  Books - getBook  Call Started for getting book by id 17
 2021-01-09 19:52:02.8387 INFO  Books - getBook  Successfully data fetched for  id 17
+2021-01-09 20:04:28.2848 INFO  User - Login Call Started for getting login
+2021-01-09 20:04:28.6049 INFO  User - Login Successfully completed
+2021-01-09 20:04:32.7648 INFO  Books - getBooks Call Started for getting books
+2021-01-09 20:04:33.0776 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 20:04:37.0809 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 20:04:37.2736 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 20:04:37.3386 INFO  Authors - getAuthors call Started 
+2021-01-09 20:04:37.4313 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-09 20:05:38.0491 INFO  Books - updateBook Call Started  for Id - 16
+2021-01-09 20:05:38.3818 INFO  Books - updateBook  completed succesfully for id - 16
+2021-01-09 20:05:38.4968 INFO  Books - getBooks Call Started for getting books
+2021-01-09 20:05:38.5571 INFO  Books - getBooks Successfully data fetched 
+2021-01-09 20:05:42.9398 INFO  Books - getBook  Call Started for getting book by id 16
+2021-01-09 20:05:43.0839 INFO  Books - getBook  Successfully data fetched for  id 16
+2021-01-09 20:17:31.1316 INFO  User - Login Call Started for getting login
+2021-01-09 20:17:31.4820 INFO  User - Login Successfully completed
