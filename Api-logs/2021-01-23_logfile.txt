@@ -1,0 +1,18 @@
+2021-01-23 18:39:30.1086 INFO  User - Login Call Started for getting login
+2021-01-23 18:39:30.4532 INFO  User - Login Successfully completed
+2021-01-23 18:39:40.7837 INFO  Books - getBooks Call Started for getting books
+2021-01-23 18:39:41.0945 INFO  Books - getBooks Successfully data fetched 
+2021-01-23 19:46:53.7578 INFO  User - Login Call Started for getting login
+2021-01-23 19:46:54.0056 WARN  User - Login No authorized details found
+2021-01-23 19:47:02.5708 INFO  User - Login Call Started for getting login
+2021-01-23 19:47:02.7632 WARN  User - Login No authorized details found
+2021-01-23 19:47:08.7002 INFO  User - Login Call Started for getting login
+2021-01-23 19:47:08.7942 WARN  User - Login No authorized details found
+2021-01-23 19:47:38.5541 INFO  User - Login Call Started for getting login
+2021-01-23 19:47:39.0053 INFO  User - Login Successfully completed
+2021-01-23 19:47:54.2482 INFO  Books - getBooks Call Started for getting books
+2021-01-23 19:47:54.5282 INFO  Books - getBooks Successfully data fetched 
+2021-01-23 19:48:28.7529 INFO  Authors - getAuthors call Started 
+2021-01-23 19:48:28.9434 INFO  Authors - getAuthors Successfully data fetched 
+2021-01-23 19:48:36.6322 INFO  Authors - getAuthors call Started 
+2021-01-23 19:48:37.3105 INFO  Authors - getAuthors Successfully data fetched 

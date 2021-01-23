@@ -38,6 +38,7 @@
     <div class="form-group">
         <label for="authors">Author</label>
         <select class="form-control" id="authors" @bind="bookModel.AuthorId">
+            <option value="">-- Select Author --</option>
             @if (Authors != null)
             {
                 @foreach (var author in Authors)

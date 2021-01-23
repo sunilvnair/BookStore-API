@@ -1,0 +1,85 @@
+﻿@page "/books/"
+@attribute [Authorize]
+@inject IBookRepository _repo
+@using System.Globalization
+
+
+<PageTitle Title="List of Books" />
+@if (bookModel == null)
+{
+
+    <LoadingMessage Message=" Loading books(s) data ....." />
+}
+else
+{
+    <AuthorizeView Roles="Administrator">
+        <a href="/books/create" class="btn btn-primary">
+            <span class="oi oi-plus"></span> Create New Book
+        </a>
+    </AuthorizeView>
+
+    if (bookModel.Count < 1)
+    {
+        <LoadingMessage Message=" No book details available . Please use 'Create New Book'
+                        link for creating new book details" />
+    }
+    else
+    {
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Title </th>
+                    <th>Year </th>
+                    <th>ISBN </th>
+                    <th>Price </th>
+                    <th>Author </th>
+
+                    <th>Actions </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var book in bookModel)
+                {
+                    <tr>
+                        <td>
+                            <img src="/uploads/@book.Image" class="img-thumbnail" style="height:50px;width:50px" />
+                        </td>
+                        <td>@book.Title</td>
+                        <td>@book.Year</td>
+                        <td>@book.ISBN</td>
+                        <td>@string.Format(indCul, "{0:C}", book.Price)</td>
+
+                        <td>@book.Author.Firstname @book.Author.Lastname</td>
+                        <td>
+                            <a href="/books/view/@book.Id" class="btn btn-primary">
+                                <span class="oi oi-document"></span>
+                            </a>
+                            <AuthorizeView Roles="Administrator">
+                                <a href="/books/edit/@book.Id" class="btn btn-warning">
+                                    <span class="oi oi-pencil"></span>
+                                </a>
+
+                                <a href="/books/delete/@book.Id" class="btn btn-danger">
+                                    <span class="oi oi-delete"></span>
+                                </a>
+                            </AuthorizeView>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private CultureInfo indCul = new CultureInfo("hi-IN");
+    private IList<Book> bookModel;
+    protected async override Task OnInitializedAsync()
+    {
+        bookModel = await _repo.Get(Endpoints.BooksEndpoint);
+    }
+
+}

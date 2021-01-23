@@ -6,7 +6,23 @@
 </div>
 
 <div class="main">
+    
     <div class="top-row px-4 navbar-dark">
+        <AuthorizeView>
+            <Authorized>
+                <NavLink class="nav-link" href="">
+                    <span class="oi oi-bell" aria-hidden="true"></span> 
+                </NavLink>
+                <NavLink class="nav-link" href="">
+                    <img src="/GeneralImages/login-image.jpg" width="30" class="rounded-circle float-none align-content-md-center">
+                    <span aria-hidden="true"></span>  @context.User.Identity.Name
+                </NavLink>
+
+                <NavLink class="nav-link" href="logout">
+                    <span class="oi oi-account-logout" aria-hidden="true"></span> Logout
+                </NavLink>
+            </Authorized>
+        </AuthorizeView>
         <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
     </div>
 
@@ -16,6 +32,6 @@
                 @Body
             </div>
         </div>
-      
+
     </div>
 </div>
