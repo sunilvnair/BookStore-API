@@ -26,7 +26,7 @@ namespace BookStore_UIWA.WASM
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
+            builder.Services.AddAuthorizationCore();
             builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddBlazoredToast();
             builder.Services.AddScoped<ApiAuthenticationStateProvider>();
